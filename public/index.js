@@ -26,6 +26,37 @@ fetch(apiUrl)
   const stocks = [GME, MSFT, DIS, BNTX];
   console.log(stocks);
   
+  // Import Chart.js if using ES modules
+// import Chart from 'chart.js';
+
+// Get the canvas element
+const ctx = document.getElementById('myChart').getContext('2d');
+
+// Your data and chart options
+const data = {
+  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  datasets: [
+    {
+      label: 'My Data',
+      data: [10, 20, 30, 25, 40, 35, 50],
+      backgroundColor: 'rgba(75, 192, 192, 0.6)',
+      borderColor: 'rgba(75, 192, 192, 1)',
+      borderWidth: 1,
+    },
+  ],
+};
+
+const options = {
+  // Your chart options here
+};
+
+// Create the chart
+const myChart = new Chart(ctx, {
+  type: 'bar', // Specify the chart type (e.g., bar, line, pie, etc.)
+  data: data,
+  options: options,
+});
+
 
 
     const timeChartCanvas = document.querySelector('#time-chart');
