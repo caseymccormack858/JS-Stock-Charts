@@ -69,6 +69,7 @@ new Chart(timeChartCanvas.getContext('2d'), {
         }]
     }
 });
+console.log(stocks[0].values)                                                  
 
 
     const timeChartCanvas = document.querySelector('#time-chart');
