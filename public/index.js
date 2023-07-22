@@ -70,6 +70,21 @@ new Chart(timeChartCanvas.getContext('2d'), {
     }
 });
 console.log(stocks[0].values)                                                  
+stocks[0].values.map( value => value. _)
+
+new Chart(timeChartCanvas.getContext('2d'), {
+    type: 'line',
+    data: {
+        labels: stocks[0].values.map(value => value.datetime),
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor:  'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)'
+        }]
+    }
+});
+
 
 
     const timeChartCanvas = document.querySelector('#time-chart');
