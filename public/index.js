@@ -17,18 +17,10 @@ fetch(apiUrl)
     console.error('Error fetching data:', error);
   });
 
-  // Comment out the fetch request
-// const apiKey = '3b1200a17be148d189a78e2e7d48d8a1';
-// const symbols = ['GME', 'MSFT', 'DIS', 'BNTX'];
-// const apiUrl = `https://api.twelvedata.com/time_series?symbol=${symbols.join(',')}&interval=1day&apikey=${apiKey}`;
+  const { GME, MSFT, DIS, BNTX } = mockData;
 
-// Replace the fetch request with the mockData
-const mockData = {
-    GME: /* GME data here */,
-    MSFT: /* MSFT data here */,
-    DIS: /* DIS data here */,
-    BNTX: /* BNTX data here */,
-  };
+  const stocks = [GME, MSFT, DIS, BNTX];
+  
   
   const { GME, MSFT, DIS, BNTX } = mockData;
   const stocks = [GME, MSFT, DIS, BNTX];
